@@ -246,8 +246,6 @@ interface ProductRowProps {
   onDelete: () => void;
 }
 
-const UNITS = ['шт', 'кг', 'л', 'упак', 'пачка', 'рул', 'компл', 'м'];
-
 function ProductRow({ product, editing, editName, editQty, editUnit, editPrice, onEditName, onEditQty, onEditUnit, onEditPrice, onToggle, onStartEdit, onSaveEdit, onCancelEdit, onDelete }: ProductRowProps) {
   if (editing) {
     return (
